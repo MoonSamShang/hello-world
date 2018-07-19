@@ -14,6 +14,7 @@ namespace HelloWorld
 			string name = "NMSS";
 			//Print out
 			Console.WriteLine($"{greeting} my name is {name}.");
+			//Pause system execution
 			Console.ReadLine();
 		}
 	}
