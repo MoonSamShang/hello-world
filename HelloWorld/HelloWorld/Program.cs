@@ -15,19 +15,26 @@ namespace HelloWorld
 			//Print out
 			Console.WriteLine($"{greeting} my name is {name}.");
 
-			Property sing = new Property();
-			sing.Sing();
+			Hobbies hobbies = new Hobbies();
+			hobbies.Sing();
+			hobbies.Read();
 			//Pause system execution
 			Console.ReadLine();
 		}
 	}
 
-	class Property
+	class Hobbies
 	{
 
 		public void Sing()
 		{
 		Console.WriteLine("What doesn't kill you makes you stronger");
+		}
+
+		public void Read()
+		{
+			string firstBook = "Gone With The Wind";
+			Console.WriteLine($"First ever book that I'd read was {firstBook}.");
 		}
 	} 
 }
