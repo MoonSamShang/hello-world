@@ -2,6 +2,7 @@
  * A program printing out your name.
  */
 using System;
+using System.Text;
 
 namespace HelloWorld
 {
@@ -19,6 +20,9 @@ namespace HelloWorld
 			hobbies.Sing();
 			hobbies.Read();
 			hobbies.Travel();
+
+			Abality abality = new Abality();
+			abality.Language();
 			//Pause system execution
 			Console.ReadLine();
 		}
@@ -43,5 +47,18 @@ namespace HelloWorld
 			string country = "Thailand";
 			Console.WriteLine($"I have been to {country}.");
 		}
-	} 
+	}
+
+	class Abality
+	{
+		public void Language()
+		{
+			string first = "Burmese";
+			string second = "English";
+			string third = "Japanese";
+			StringBuilder stringBuilder = new StringBuilder($"I can speak three languages. These are {first} {second} {third}");
+			Console.WriteLine(stringBuilder);
+		}
+
+	}
 }
