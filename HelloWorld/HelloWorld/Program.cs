@@ -18,6 +18,7 @@ namespace HelloWorld
 			Hobbies hobbies = new Hobbies();
 			hobbies.Sing();
 			hobbies.Read();
+			hobbies.Travel();
 			//Pause system execution
 			Console.ReadLine();
 		}
@@ -35,6 +36,12 @@ namespace HelloWorld
 		{
 			string firstBook = "Gone With The Wind";
 			Console.WriteLine($"First ever book that I'd read was {firstBook}.");
+		}
+
+		public void Travel()
+		{
+			string country = "Thailand";
+			Console.WriteLine($"I have been to {country}.");
 		}
 	} 
 }
