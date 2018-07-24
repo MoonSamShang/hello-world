@@ -21,8 +21,12 @@ namespace HelloWorld
 			hobbies.Read();
 			hobbies.Travel();
 
+		// Updated upstream
 			Abality abality = new Abality();
 			abality.Language();
+
+			
+		//Stashed changes
 			//Pause system execution
 			Console.ReadLine();
 		}
@@ -47,6 +51,7 @@ namespace HelloWorld
 			string country = "Thailand";
 			Console.WriteLine($"I have been to {country}.");
 		}
+// Updated upstream
 	}
 
 	class Abality
@@ -60,5 +65,22 @@ namespace HelloWorld
 			Console.WriteLine(stringBuilder);
 		}
 
+
+	}
+	
+	class Finance
+	{
+		public static void Calculate()
+		{
+			double income = 156000;
+			double tax = income * 0.05;
+			double incomeAfterTax = income - tax;
+			double healthInsurance = income * 0.22;
+			double pension = income * 
+			double 
+			double socialInsurance = 
+
+		}
+		// Stashed changes
 	}
 }
